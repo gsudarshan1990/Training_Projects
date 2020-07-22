@@ -27,7 +27,7 @@ message['Subject'] = subject
 
 message.attach(MIMEText(body,'plain'))
 
-filename = "F:\Downloads\BIOS_RTWM9_WN64_2.8.1.EXE"
+filename = "F:\Downloads\lnvgy_fw_uefi_ive156l-2.61_anyos_32-64 (1).uxz.crdownload"
 with open(filename,"rb") as attachment:
     payload = MIMEBase("application","octet-stream")
     payload.set_payload(attachment.read())
@@ -42,4 +42,3 @@ context = ssl.create_default_context()
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(sender, password)
     server.sendmail(sender,receiver,text)
-
