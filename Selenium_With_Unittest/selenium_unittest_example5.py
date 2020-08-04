@@ -35,4 +35,4 @@ class FrameTest(unittest.TestCase):
         self.driver.quit()
 
 if __name__ == '__main__':
-    self.driver.quit()
+    unittest.main()
